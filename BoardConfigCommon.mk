@@ -34,7 +34,7 @@ TARGET_KERNEL_SOURCE         := kernel/samsung/msm8930-common
 ifneq ($(filter serranoltespr serranolteusc,$(TARGET_DEVICE)),)
 TARGET_KERNEL_CONFIG         := cyanogen_serrano_usa_defconfig
 else
-TARGET_KERNEL_CONFIG         := cyanogen_serrano_defconfig
+TARGET_KERNEL_CONFIG         := bliss_defconfig
 endif
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
