@@ -27,6 +27,8 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/bootanimation/540.zip:system/media/bootanimation.zip 
 
 # Permissions
 PRODUCT_COPY_FILES += \
