@@ -138,10 +138,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
 
-# XOSPOTA
-PRODUCT_PACKAGES += \
-    XOSPOTA
-
 # call common serrano system props
 $(call inherit-product, device/samsung/serrano-common/system_prop.mk)
 
