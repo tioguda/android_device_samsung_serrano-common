@@ -25,7 +25,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.disable=1 \
     mm.enable.smoothstreaming=true \
     use.dedicated.device.for.voip=true \
-    qcom.hw.aac.encoder=true \
     media.aac_51_output_enabled=true
 
 # Graphics
@@ -49,12 +48,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.warmboot.capability=1 \
     persist.timed.enable=true \
     wifi.interface=wlan0 \
-    ro.qualcomm.bt.hci_transport=smd
+    ro.qualcomm.bt.hci_transport=smd \
+    ro.sdcardfs.enable=true
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/system/lib/libqc-opt.so
 
+# Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false \
     ro.sys.fw.dex2oat_thread_count=4
